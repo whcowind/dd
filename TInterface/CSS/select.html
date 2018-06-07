@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+	<link rel="stylesheet/less" type="text/css" href="CSS/select.less"/>
+	<script type="text/javascript" src="JS/less.js"></script>
+	<title>select</title>
+</head>
+
+	<div id="dd" class="wrapper-dropdown-5" tabindex="1">John Doe
+		<ul class="dropdown">
+			<li><a href="#"><i class="icon-user"></i>Profile</a></li>
+			<li><a href="#"><i class="icon-cog"></i>Settings</a></li>
+			<li><a href="#"><i class="icon-remove"></i>Log out</a></li>
+		</ul>
+	</div>
+
+<body>
+	
+</body>
+
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+
+	function DropDown(el) {
+	    this.dd = el;
+	    this.initEvents();
+	}
+	
+	DropDown.prototype = {
+	    initEvents : function() {
+	        var obj = this;
+
+	        obj.dd.on('click', function(event){
+	            $(this).toggleClass('active');
+	            event.stopPropagation();
+	        }); 
+	    }
+	}
+
+});
+</script>

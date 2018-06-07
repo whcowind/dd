@@ -1,0 +1,27 @@
+less 分割
+
+TF送出後未消失  (以解決 使用ajaxComplete)
+
+sublime段落大標題
+
+getScore(id name 錯誤)
+
+this  class 用法
+
+img 置中
+
+Back Button Z-index
+
+top just in position relative?  (relative absolute fixed)
+
+in less (CSS) can two or more class name use same property   ex: .a .b {width = 100%;}
+
+用relative or absolute 是否可以用 float
+
+Confirm btn 和 Cancel btn 對齊
+
+Confirm btn 和 Cancel btn 同line-height 不同效果
+
+subQuestion Top 失效
+
+同一按鈕觸發不同事件($(this).closest('.parent').find('子題'))

@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- google font -->
+	<!-- google font -->
+	<link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet/less" type="text/css" href="CSS/index.less"/>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="JS/framework/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="JS/framework/less.js"></script> 
+	<title>培龍計畫</title>
+</head>
+
+<body>
+
+	<!--Main-->
+	<div class = 'mainContainer'>
+
+		<!--Title Status Bar-->
+		<div class = 'titleContainer'>
+			<div class = 'title'>
+				<div class = 'homeIcon'>
+					<img class = 'home' src = 'image/home.png'></img>
+					<div class = 'homeText'>培龍計畫</div>
+				</div>
+				<div class = 'dropdownBox'>
+					<!-- <div class = 'tempList01'>
+						<div class = 'totalProjectList lchList'><span class = 'MP'>總計劃</span></div>
+						<div class = 'tPShadow dropdownList' id = 'tPS'>
+							<div class = 'tPSC0 tPSC itemChColor'></div>
+							<div class = 'tPSC1 tPSC itemChColor'>內容簡介</div>
+						</div>
+					</div> -->
+					<div class = 'tempList02'>
+						<div class = 'reList mathList lchList'><span class = 'MP'>數學</span></div>
+						<div class = 'reShadow mShadow dropdownList' id = 'mS'>
+							<div class = 'reSC mSC0 mSC itemChColor'></div>
+							<div class = 'reSC mSC1 mSC itemChColor'>計畫簡介</div>
+							<div class = 'reSC mSC2 mSC itemChColor'>主持人簡介</div>
+						</div>
+					</div>
+					<div class = 'tempList03'>
+						<div class = 'reList scienceList lchList'><span class = 'MP'>科學</span></div>
+						<div class = 'reShadow sShadow dropdownList' id = 'sS'>
+							<div class = 'reSC sSC0 sSC itemChColor'></div>
+							<div class = 'reSC sSC1 sSC itemChColor'>計畫簡介</div>
+							<div class = 'reSC sSC2 sSC itemChColor'>主持人簡介</div>
+						</div>
+					</div>
+					<div class = 'tempList01'>
+						<div class = 'reList readList lchList'><span class = 'MP'>閱讀</span></div>
+						<div class = 'reShadow rShadow dropdownList' id = 'rS'>
+							<div class = 'reSC rSC0 rSC itemChColor'></div>
+							<div class = 'reSC rSC1 rSC itemChColor'>計畫簡介</div>
+							<div class = 'reSC rSC2 rSC itemChColor'>主持人簡介</div>
+						</div>
+					</div>
+					<div class = 'tempList04'>
+						<div class = 'reList shareList lchList'><span class = 'MP'>下載</span></div>
+						<!-- <div class = 'eShadow dropdownList'>
+							<div class = 'eSC0 eSC itemChColor'></div>
+							<div class = 'eSC1 eSC itemChColor'>Test1</div>
+							<div class = 'eSC2 eSC itemChColor'>Test2</div>
+						</div> -->
+					</div>
+					<div class = 'tempList05'>
+						<div class = 'reList loginList lchList'><span class = 'MP'>登入</span></div>
+						<div class = 'reShadow lShadow dropdownList' id = 'lS'>
+							<div class = 'reSC lSC0 lSC itemChColor'></div>
+							<div class = 'reSC lSC1 lSC itemChColor'>學生登入</div>
+							<div class = 'reSC lSC2 lSC itemChColor'>教師登入</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Theme image-->
+		<div class = 'imgMark'>
+			<?xml version="1.0" encoding="utf-8"?>
+			<!-- Generator: Adobe Illustrator 14.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="SVGText" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 308 145" enable-background="new 0 0 308 145" xml:space="preserve">
+			<!-- <text class = 'SVGText1' transform="matrix(1 0 0 1 9 56)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>Math</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 9 56)" fill="#000000" font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>Math</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 92)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>&amp;</text>
+			<text class = 'SVGText2Color SVGTextColor' transform="matrix(1 0 0 1 132 92)" fill="#000000" font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>&amp;</text>
+
+			<text class = 'SVGText3' transform="matrix(1 0 0 1 172 136)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>Science</text>
+			<text class = 'SVGText3Color SVGTextColor' transform="matrix(1 0 0 1 172 136)" fill="#000000" font-family="'Arial'" font-size="32" stroke = '#ffffff' stroke-width = '0.6' stroke-dasharray = '2000'>Science</text> -->
+
+			<text class = 'SVGText1' transform="matrix(1 0 0 1 280 20)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>提</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 20)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>提</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 280 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>昇</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>昇</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 280 60)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>國</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 60)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>國</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 280 80)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>小</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 80)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>小</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 280 100)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>中</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 100)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>中</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 280 120)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>低</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 280 120)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>低</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 20)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>數</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 20)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>數</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>理</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>理</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 60)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>與</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 60)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>與</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 80)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>閱</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 80)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>閱</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 100)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>讀</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 100)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>讀</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 120)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 120)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 250 140)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>習</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 250 140)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>習</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 220 20)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>成</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 220 20)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>成</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 220 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>就</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 220 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>就</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 220 60)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 220 60)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 220 80)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>童</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 220 80)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>童</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 20)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>數</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 20)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>數</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>理</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>理</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 60)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>與</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 60)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>與</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 80)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>閱</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 80)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>閱</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 100)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>讀</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 100)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>讀</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 120)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>能</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 120)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>能</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 190 140)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>力</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 190 140)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>力</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 160 20)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>之</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 160 20)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>之</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 160 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>研</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 160 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>研</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 160 60)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>究</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 160 60)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>究</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 140 5)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="15" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000' style = 'writing-mode:tb-rl;'>(</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 140 5)" fill="#000000" font-family="'Arial'" font-size="15" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000' style = 'writing-mode:tb-rl;'>(</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 25)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>科</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 25)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>科</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 40)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 40)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>學</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 55)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>教</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 55)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>教</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 70)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>育</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 70)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>育</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 85)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>培</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 85)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>培</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 100)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>龍</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 100)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>龍</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 115)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>計</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 115)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>計</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 132 130)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>畫</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 132 130)" fill="#000000" font-family="'Arial'" font-size="14" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000'>畫</text>
+
+			<text class = 'SVGText2' transform="matrix(1 0 0 1 140 137)" fill = 'rgba(0,0,0,0)' font-family="'Arial'" font-size="15" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000' style = 'writing-mode:tb-rl;'>)</text>
+			<text class = 'SVGText1Color SVGTextColor' transform="matrix(1 0 0 1 140 137)" fill="#000000" font-family="'Arial'" font-size="15" stroke = '#ffffff' stroke-width = '0.08' stroke-dasharray = '2000' style = 'writing-mode:tb-rl;'>)</text>
+			</svg>
+
+			<div class = 'themeImgBox'>
+			</div>
+			<div class = 'downIcon'>
+			</div>
+		</div>
+		<div class = 'blankSpace'>
+		</div>
+
+
+		<!--Main Text Area-->
+		<div class = 'contentBox'>
+			<div class = 'contentBorder1 contentBorder'></div>
+			<div class = 'contentBorder2 contentBorder'></div>
+			<div class = 'contentBorder3 contentBorder'></div>
+			<div class = 'contentBorder4 contentBorder'></div>
+
+			<!--contain-->
+			<div class = 'contain' id = 'contain'>
+				<!-- 總計畫執行內容 -->
+				<div class = 'TPContainBox'>
+					<div class = 'TP01Ttitle textTitle'>
+						總計畫執行內容
+					</div>
+					<div class = 'TP01Contain textContain' style="white-space:pre-line;">
+						本單一整合型計畫以三年為期進行規畫，其宗旨乃在提昇國小中高年級中低學習成就學童數理與閱讀能力之研究。首先，本研究從社會、家庭與學校環境探討國小中低數理學習成就學童的學習特性及困難，並建立數理與科學閱讀能力的成長監控機制。然後，本研究根據學生的學習特性及困難、數理與科學閱讀的核心能力，開發提昇國小中低學習成就學生數理與閱讀能力之教學模組，並建置數位學習平台架構。第二年則進行實驗教學暨發展數位教材，第三年將所發展的教學模組與數位學習教材推廣至國小，以提升學童之數理與閱讀能力。
+						
+						子計畫一：提昇國小中低科學學習成就學童科學能力之研究(高慧蓮教授負責)
+						子計畫二：提昇國小中低數學學習成就學童數學能力之研究(徐偉民教授負責)
+						子計畫三：提昇國小中低閱讀能力學童科學閱讀理解之研究(陸怡琮副教授負責)
+						本單一整合型計畫之數位學習平台建置(石佳弘副教授負責)
+						
+					</div>
+				</div>
+				<!-- 數學計畫簡介 -->
+				<div class = 'MPContainBox'>
+					<div class = 'MPTitle textTitle'>
+						數學 - 計畫內容
+					</div>
+					<div class = 'MPContain textContain' style="white-space:pre-line;">
+						本研究目的在於發展適合不同程度學生使用的數學補教課程與教學，來提升數學學習落後學生之學習表現以落實數學學
+						習公平性的目標。本計畫以兩年來完成國小數學補救課程的規劃。第一年採用協同行動研究，和合作學校教師共同編修符
+						合學校特色的數學補救教學課程，並到現場實施，來提升數學學習弱勢學生的學習表現，同時針對師生的反應 現進行詮釋
+						以作為數學補救教學課程修正的基礎。第二年採用協同行動研究和詮釋研究，一方面將精緻化後的數學補救教學課程，擴
+						大應用到不同類型的學校，同時透過詮釋研究的方法，來瞭解推廣應用時學生數學學習表現提升的情形，以及教師使用的
+						意見，作為教學補救課程再精緻化的基礎，同時也將兩年的研究成果建置成MRI網站資料庫，作為後續擴大應用與永續經
+						營的基礎，建立一個與學校和教師溝通諮詢的平台。希望藉由本研究數學補救教學課程的開發與應用，讓數學學習弱勢學
+						生有機會提升自己的學習表現，增加未來發展的可能性，實現教育公平性的目標。
+					</div>
+				</div>
+				<!-- 數學主持人簡介 -->
+				<div class = 'MPHContainBox'>
+					<div class = 'MPHTitle textTitle'>
+						數學 - 計畫主持人簡介
+					</div>
+					<div class = 'MPGContain textContain' style="white-space:pre-line;">
+						徐偉民，國立屏東大學科普傳播學系教授。曾任國立屏東大學數理教育研究所所長、科普傳播學系系 主任、美國University of Missouri-Columbia 訪問學 者。研究領域為數學課程研究、數學教師專業發展、原住民數學教育、以及數學補救教學等。著作包括 期刊論文30餘篇、研討會論文40餘篇，曾執行10餘 個台灣科技部研究計畫案，目前執行的研究計畫包括數學課程、數學教師專業成長、以及原住民數學 課程等研究計畫。
+					</div>
+				</div>
+
+				<!-- 科學計畫簡介 -->
+				<div class = 'SPContainBox'>
+					<div class = 'SPTitle textTitle'>
+						科學 - 計畫內容
+					</div>
+					<div class = 'SPContain textContain' style="white-space:pre-line;">
+						本計畫擬針對國小自然領域中低成就的學生(即學生落後班級平均表現的學生) ，來探究他們的科學學習及困難，並採用PISA 2015科學素養能力，以三大科學素養能力(科學的解釋現象、評估與設計科學探索的方法、科學地詮釋數據與證據)選擇適合國小中、高學童能力的九個成分，並分五類應用範圍(健康與疾病、災害、自然資源、環境的品質、科學與科技的探索)去研發類PISA試題及與國小教師形成研究團隊小組，依照小學自然與生活科技單元並結合學童日常生活經驗及先備知識做結合去設計中、高年級教案、教學模組及學習單，透過學生學習單的回饋、教學日誌及教室觀察中去探討中低科學成就學生的學習改變情形，並做為日後教學與課程上的改進，期以提升中低科學成就學童對自然探究的自信與興趣。
+					</div>
+				</div>
+				<!-- 科學主持人簡介 -->
+				<div class = 'SPHContainBox'>
+					<div class = 'SPHTitle textTitle'>
+						科學 - 計畫主持人簡介
+					</div>
+					<div class = 'SPGContain textContain' style="white-space:pre-line;">
+						高慧蓮，國立屏東大學科普傳播學系教授。現任國立屏東大學科普傳播學系系 主任
+						專長領域：生物、生物暨海洋教育、課程與教學、師資培育、科學哲學、學生學習、科學概念、科學本質、科學探究
+
+					</div>
+				</div>
+
+				<!-- 閱讀計畫簡介 -->
+				<div class = 'RPContainBox'>
+					<div class = 'RPTitle textTitle'>
+						閱讀 - 計畫內容
+					</div>
+					<div class = 'RPContain textContain' style="white-space:pre-line;">
+						本子計畫的研究目的在發展適用於國小中高年級的科學閱讀教材與教學模組，以提升中低閱讀能力學生的科學閱讀理解。
+具體做法包括: 
+1. 發展以PISA試題架構為基礎的科學閱讀理解評量工具，以建構國小四至六年級學童科學閱讀能力成長監控的機制。
+2. 發展融入國小中高年級科學探究課程的數理閱讀教材與教學模組，並檢測教學模組對提升數理閱讀理解的成效。
+
+					</div>
+				</div>
+
+				<!-- 閱讀主持人簡介 -->
+				<div class = 'RPHContainBox'>
+					<div class = 'RPHTitle textTitle'>
+						閱讀 - 計畫主持人簡介
+					</div>
+					<div class = 'RPGContain textContain' style="white-space:pre-line;">
+						陸怡琮
+國立屏東大學教育心理與輔導學系 副教授
+專長: 閱讀學習與發展、閱讀與寫作策略教學、學習心理學
+
+					</div>
+				</div>
+
+				<!-- 下載 -->
+				<div class = 'DPContainBox'>
+					<div class = 'DPTitle textTitle'>
+						分享下載區
+					</div>
+					<div class = 'DPContain textContain'>
+						<div class="share_item">
+							<a href="" download="">
+								<img class="download" src="image/box.png" title="下載" />
+							</a>
+							<div class="name" style="color:#7790CD;">姓名</div>
+							<div class="sort" style="color:#7790CD;">分類</div>
+							<div class="title" style="color:#7790CD;">檔名</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class = 'goTop'>
+			<img class = 'topImg' src = 'image/gotop.png'>
+			<span class = 'topText'>Top</span>
+		</div>
+
+
+	</div>
+
+
+</body>
+
+<script type="text/javascript" src="JS/framework/jquery.js"></script>
+<script type="text/javascript" src="JS/framework/ajaxfileupload.js"></script>
+<script type="text/javascript" src="JS/framework/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="JS/framework/angular.js"></script>
+<script type="text/javascript" src="JS/framework/velocity.js"></script>
+<script type="text/javascript" src="JS/definition/title.js"></script>
+<script type="text/javascript" src="JS/definition/changePage.js"></script>
+<script type="text/javascript" src="JS/definition/changeAnimation.js"></script>
+<script type="text/javascript" src="JS/definition/button.js"></script>
+<script type="text/javascript" src="JS/definition/cssInitialization.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+	
+});
+	
+</script>

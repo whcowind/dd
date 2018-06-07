@@ -1,0 +1,159 @@
+body , html{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+
+	.sidebar{
+		width: 12%;
+		height: 100%;
+		float: left;
+		background-color: #181D20;
+		border-right: 1px solid #ECEDF0;
+
+		.sidebar-header{
+			height: 62px;
+			width: 100%;
+			line-height: 62px;
+			text-align: center;
+			position: relative;
+			background-color: #fff !important;
+
+			.logo{
+				width: 70%;
+				height: 70%;
+				margin-top:10px; 
+			}
+		}
+
+		.sidebar-content{
+			width: 100%;
+			height: 100%;
+			overflow-y:auto; 
+
+			.photo{
+				width: 100%;
+				height: 12.25%;
+
+				.circle{
+					width: 50%;
+					height: 100%;
+					background-color: #fff !important;
+					border-radius: 50%;
+					margin-left: 25%;
+					margin-top: 5%;
+				}
+			}
+
+			.item{
+				height: 45px;
+				width: 100%;
+				line-height: 45px;
+				margin: 5px 0;
+				padding: 5px 0;
+				border-top:1px solid #181D20;
+				border-bottom:1px solid #181D20;
+
+				a{
+					text-decoration:none;
+					color: rgba(255,255,255,0.6);
+				}
+
+				.itme-text{
+					height: 40px;
+					line-height: 40px;
+					font-family: Microsoft JhengHei;
+					font-size: 22px;
+					background-repeat: no-repeat;
+					background-position: 20px 50%;
+					background-size: 20px;
+					padding-left: 30%;
+				}
+
+				&:hover{
+					border-top:1px solid #00BBFF;
+					border-bottom:1px solid #00BBFF;
+				}
+
+				.account-icon{
+					background-image: url(/MSR/manager/image/user-plus.png);
+				}
+
+				.question-icon{
+					background-image: url(/MSR/manager/image/question.png);
+				}
+
+				.paper-icon{
+					background-image: url(/MSR/manager/image/paper.png);
+				}
+
+				.grade-icon{
+					background-image: url(/MSR/manager/image/grade.png);
+				}
+
+				.picture-icon{
+					background-image: url(/MSR/manager/image/picture.png);
+				}
+
+				.download-icon{
+					background-image: url(/MSR/manager/image/download.png);
+				}
+
+				.permission-icon{
+					background-image: url(/MSR/manager/image/permission.png);
+				}
+			}
+
+			.account{
+				margin-top: 15%;
+			}
+		}
+	}
+
+	.container{
+		width: 87.9%;
+		height: 100%;
+		background-color: #ECEDF0;
+		float: left;
+
+		.container-header{
+			line-height: 62px;
+			height: 62px;
+			width: 100%;
+			background-color: #fff !important;
+
+			.logout{
+				margin-right: 20px;
+				font-family: Microsoft JhengHei;
+				font-size: 22px;
+				color: #C63300;
+				float: right;
+				cursor: pointer;
+				background-image: url(/MSR/manager/image/logout.png);
+				background-repeat: no-repeat;
+				background-position: 20px 50%;
+				background-size: 20px;
+				padding-left: 50px;
+			}
+		}
+
+		.container-status{
+			height: 45px;
+			width: 100%;
+			background-color: #181D20;
+			border-bottom: 6px solid #888888;
+			line-height: 45px;
+
+			.status{
+				font-family: Microsoft JhengHei;
+				font-size: 22px;
+				color: #ffffff;
+				background-image: url(/MSR/manager/image/home.png);
+				background-repeat: no-repeat;
+				background-position: 20px 50%;
+				background-size: 20px;
+				padding-left: 50px;
+			}
+		}
+	}
+}

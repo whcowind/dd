@@ -1,0 +1,470 @@
+// 接受空白
+div.QDetail,div.GPDetail,{
+	  white-space: pre-wrap; /* css-3 */
+	  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	  white-space: -pre-wrap; /* Opera 4-6 */
+	  white-space: -o-pre-wrap; /* Opera 7 */
+	  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+
+
+
+html , body{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	background-color: #9dc565;
+	overflow: hidden;
+
+	.list{
+		width: 150px;
+		margin: 0 auto;
+		top: 30%;
+		position: relative;
+	}
+
+	.initBtn{
+		width: 100%;
+		height: 100%;
+		margin:0;
+
+		.start{
+			width:100px;
+			height: 35px;
+			margin-left: 41%;
+			margin-top: 20%;
+			float: left;
+			text-align: center;
+			line-height: 35px;
+			color: #000000;
+			background-color: #B08D8E;
+			cursor: pointer;
+		}
+
+		.logout{
+			width: 100px;
+			height: 35px;
+			margin-left: 20px;
+			margin-top: 20%;
+			float: left;
+			text-align: center;
+			line-height: 35px;
+			color: #000000;
+			background-color: #CCDDCC;
+			cursor: pointer;
+		}
+	}
+
+	.examBox{
+		margin: 0 auto;
+		margin-top: 50px;
+		width: 90%;
+		height: 90%;
+		padding-left: 2%;
+		padding-right: 2%;
+		overflow-y: scroll; 
+		background-color: #ffffff;
+		border: 4px solid #E0EAF1;
+
+		.content{
+			
+			.PaperTitle{
+				font-size: 30px;
+				font-family: 'Roboto Slab', serif;
+				text-align: center;
+			}
+
+			.QAreaText{
+				font-size: 30px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				color: #4285F4;
+			}
+
+			.Q_hr{
+				border: #BFD09A 2px double;
+			}
+
+			.QDetail{
+				font-size: 28px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+
+			.GPDetail{
+				font-size: 24px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+			}
+
+			.QAnsText{
+				font-size: 32px;
+				font-family: 'Roboto Slab', serif;
+			}
+
+			label{
+				font-size: 26px;
+				font-family: 'Roboto Slab', serif;
+			}
+
+			img{
+				/*width: 80px;*/
+				/*height: 80px;*/
+			}
+
+			.GPBOX{
+				width: 100%;
+				height:200px;
+				border-top: #BCE2EF 3px solid;
+				border-bottom: #BCE2EF 3px solid;
+				overflow-y: scroll;
+			}
+
+			.GPQBOX{
+				width: 100%;
+				height:auto;
+				border-top: #BCE2EF 3px solid;
+				border-bottom: #BCE2EF 3px solid;
+				overflow-y: scroll;
+			}
+		}
+
+
+		.controll_region{
+			width: 100%;
+			height: 50px;
+
+			.submit{
+				width: 150px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				float: left;
+				background-color: #EEEDAD;
+				cursor: pointer;
+				font-family: 'Roboto Slab', serif;
+				font-size: 20px;
+				display: none;
+			}
+
+			.close{
+				width: 150px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				float: right;
+				background-color: #EEEDAD;
+				cursor: pointer;
+				font-family: 'Roboto Slab', serif;
+				font-size: 20px;
+				display: none;
+			}
+
+			.next{
+				width: 150px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				margin: 0 auto;
+				background-color: #EEEDAD;
+				cursor: pointer;
+				font-family: 'Roboto Slab', serif;
+				font-size: 20px;
+				display: none;
+			}
+		}
+	}
+
+	.ForGP{
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 90%;
+		height: 50%;
+		padding-left: 1%;
+		padding-right: 1%;
+		overflow-y: auto; 
+		background-color: #ffffff;
+		border: 4px solid #E0EAF1;
+		display: none;
+
+		.content{
+			height: 100%;
+			.PaperTitle{
+				font-size: 28px;
+				font-family: 'Roboto Slab', serif;
+				text-align: center;
+			}
+
+			.Q_hr{
+				border: #BFD09A 2px double;
+			}
+
+			.QDetail{
+				font-size: 28px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+
+			.GPDetail{
+				font-size: 28px;
+				line-height: 50px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+			}
+
+			.GPBOX{
+				width: 100%;
+				height:100%;
+				/*border-top: #BCE2EF 3px solid;*/
+				/*border-bottom: #BCE2EF 3px solid;*/
+				overflow-y: auto;
+			}
+
+			.GPQBOX{
+				width: 100%;
+				height:auto;
+				overflow-y: auto;
+			}
+		}
+	}
+
+	.ForSub{
+		margin: 0 auto;
+		margin-top: 15px;
+		width: 90%;
+		height: 40%;
+		padding-left: 1%;
+		padding-right: 1%;
+		overflow-y: scroll; 
+		background-color: #ffffff;
+		display: none;
+		border: 4px solid #E0EAF1;
+
+		.GPSBlock{
+			display: none;
+			.content{
+				.PaperTitle{
+					font-size: 30px;
+					font-family: 'Roboto Slab', serif;
+					text-align: center;
+				}
+
+				.QAreaText{
+					font-size: 30px;
+					font-family: 'Roboto Slab', serif;
+					text-align: left;
+					color: #4285F4;
+				}
+
+				.Q_hr{
+					border: #BFD09A 2px double;
+				}
+
+				.QDetail{
+					font-size: 28px;
+					font-family: 'Roboto Slab', serif;
+					text-align: left;
+					margin-bottom: 10px;
+				}
+
+				.GPDetail{
+					font-size: 24px;
+					font-family: 'Roboto Slab', serif;
+					text-align: left;
+				}
+
+				.QAnsText{
+					font-size: 32px;
+					font-family: 'Roboto Slab', serif;
+				}
+
+				label{
+					font-size: 26px;
+					font-family: 'Roboto Slab', serif;
+				}
+
+				.GPQBOX{
+					width: 100%;
+					height:auto;
+					border-top: #BCE2EF 3px solid;
+					border-bottom: #BCE2EF 3px solid;
+					overflow-y: scroll;
+				}
+
+				.GPSA{
+					width: 70%;
+					height: 150px;
+					margin-left: 2%;
+					font-size: 24px;
+					font-family: 'Roboto Slab', serif;
+					text-align: left;
+					margin: 0 auto;
+					overflow-y: auto; 
+					resize:none;
+				}
+			}
+
+			.controll_region{
+				width: 100%;
+				height: 50px;
+
+				.submit{
+					width: 150px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					float: left;
+					background-color: #EEEDAD;
+					cursor: pointer;
+					font-family: 'Roboto Slab', serif;
+					font-size: 20px;
+					display: none;
+				}
+
+				.close{
+					width: 150px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					float: right;
+					background-color: #EEEDAD;
+					cursor: pointer;
+					font-family: 'Roboto Slab', serif;
+					font-size: 20px;
+					display: none;
+				}
+
+				.next{
+					width: 150px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					margin: 0 auto;
+					background-color: #EEEDAD;
+					cursor: pointer;
+					font-family: 'Roboto Slab', serif;
+					font-size: 20px;
+					display: none;
+				}
+
+				.nextQ{
+					width: 150px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					margin: 0 auto;
+					background-color: #EEEDAD;
+					cursor: pointer;
+					font-family: 'Roboto Slab', serif;
+					font-size: 20px;
+					display: none;
+				}
+			}
+		}
+
+		
+
+
+		
+	}
+
+	.ForSA{
+		margin: 0 auto;
+		margin-top: 25px;
+		width: 90%;
+		height: 90%;
+		padding-left: 2%;
+		padding-right: 2%;
+		overflow-y: auto; 
+		background-color: #ffffff;
+		display: none;
+		border: 4px solid #E0EAF1;
+
+		.content{
+			
+			.PaperTitle{
+				font-size: 30px;
+				font-family: 'Roboto Slab', serif;
+				text-align: center;
+			}
+
+			.QAreaText{
+				font-size: 30px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				color: #4285F4;
+			}
+
+			.Q_hr{
+				border: #BFD09A 2px double;
+			}
+
+			.QDetail{
+				font-size: 28px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				margin-bottom: 10px;
+			}
+
+			.AnsArea{
+				width: 70%;
+				height: 150px;
+				font-size: 22px;
+				font-family: 'Roboto Slab', serif;
+				text-align: left;
+				margin: 0 auto;
+				overflow-y: auto; 
+				resize:none;
+			}
+		}
+
+
+		.controll_region{
+			width: 100%;
+			height: 50px;
+
+			.submit{
+				width: 150px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				margin-top: 15px;
+				float: left;
+				background-color: #EEEDAD;
+				cursor: pointer;
+				font-family: 'Roboto Slab', serif;
+				font-size: 20px;
+				display: none;
+			}
+
+			.close{
+				width: 150px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				float: right;
+				background-color: #EEEDAD;
+				cursor: pointer;
+				font-family: 'Roboto Slab', serif;
+				font-size: 20px;
+				display: none;
+			}
+		}
+	}
+
+}
+
+label{
+	font-size:19px;
+	cursor: pointer;
+}
+
+input[type=radio]{
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	margin-left: 3%;
+}

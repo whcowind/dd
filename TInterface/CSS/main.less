@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu); /*myproject*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat); /*≡*/
+@import 'function.less';
+html , body{
+	width:100%;
+	height:100%;
+	margin: 0;
+
+	.container{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		background: linear-gradient(135deg , #63436B , #BC9AB5 , #F8C19C , #F0A690);
+		background: -webkit-linear-gradient(135deg , #63436B ,  #BC9AB5 , #F8C19C , #F0A690);
+
+		.status_bar{
+			width: 100%;
+			height:45px;
+			margin: 0;
+			background-color: rgba(0,0,0,0.17);
+			position: relative;
+
+			.title_bar{
+				width: 12%;
+				height: 100%;
+				margin: 0;
+				padding-left: 25px;
+				background-color: rgba(0,0,0,0.1);
+				display: inline-block;
+				position: relative;
+
+				.title{
+					width: 70%;
+					height: 100%;
+					color: #FFFFFF;
+					font-size: 18px;
+					text-align: center;
+					line-height: 45px;
+					font-family: 'Ubuntu', sans-serif;
+					display: inline-block;
+				}
+
+				.control_bar{
+					width: 40px;
+					height: 100%;
+					left: 0;
+					color: #FFFFFF;
+					font-size: 25px;
+					text-align: center;
+					line-height: 45px;
+					font-weight: bold;
+					font-family: 'Montserrat', sans-serif;
+					display: inline-block;
+				}
+			}
+
+			.account-data{
+				width: 12%;
+				height: 45px;
+				background-color: rgba(0,0,0,0.1);
+				/*top: 0;
+				right: 0;
+				display: inline-block;
+				position: absolute;*/
+				float: right;
+
+				.account-photo{
+					width: 45px;
+					height: 45px;
+					border-right: 1px rgba(255,255,255,0.5) solid;
+					display: inline-block;
+					float: left;
+				}
+
+				.account-name{
+					width: 100px;
+					height: 45px;
+					right: 50px;
+					text-align: center;
+					line-height: 45px;
+					color: #FFFFFF;
+					display: inline-block;
+				}
+
+				.account-motion{
+					width: 45px;
+					height: 45px;
+					text-align: center;
+					line-height: 45px;
+					color: rgba(255,255,255,0.3);
+					cursor: pointer;
+					display: inline-block;
+					float: right;
+					position: relative;
+					z-index: 1;
+				}
+
+				.logout{
+					width: 150px;
+					height: 45px;
+					background-color: rgba(0,0,0,0.5);
+					top: 0px;
+					right: 0px;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 45px;
+					opacity:0;
+					cursor: pointer;
+					position: absolute;
+					z-index: 0;
+					.transition-duration(1s);
+				}
+			}
+		}
+	}
+}

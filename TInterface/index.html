@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- google link -->
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<!-- google link -->
+	<link rel="stylesheet/less" type="text/css" href="CSS/index.less"/>
+	<script type="text/javascript" src="JS/less.js"></script>
+	<title>Login</title>
+</head>
+
+<body>
+	<div class = "content">
+		<div class = "login-form">
+			<div class = "student-form">
+				<div class = 'sign-in'>Sign In</div>
+				<hr class = 'login-hr'/>
+				<input type = 'text' class = 'student-id id' id = 'student-id' placeholder = 'ID'/>
+				<input type = 'password' class = 'student-password password' id = 'student-password' placeholder = 'Password'/>
+				<div class = 'remeber'>
+					<div class = 'remeber-box'></div>
+					<div class = 'remeber-text'>Remeber?</div>
+				</div>
+				<div class = 'switch-btn'>Switch</div>
+				<div class = 'Slogin-btn login-btn'>Login</div>
+				<div class = 'switch-hint'>Student Mode</div>
+			</div>
+
+			<div class = "admin-form">
+				<div class = 'sign-in'>Sign In</div>
+				<hr class = 'login-hr'/>
+				<input type = 'text' class = 'admin-id id' placeholder = 'ID'/>
+				<input type = 'password' class = 'admin-password password' placeholder = 'Password'/>
+				<div class = 'remeber'>
+					<div class = 'remeber-box'></div>
+					<div class = 'remeber-text'>Remeber?</div>
+				</div>
+				<div class = 'switch-btn'>Switch</div>
+				<div class = 'Alogin-btn login-btn'>Login</div>
+				<div class = 'switch-hint'>Admin Mode</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="JS/jquery.js"></script>
+<script type="text/javascript" src="JS/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var windowH = window.innerHeight;
+	var login_form_height = $('.content').find('.login-form').height();
+	var login_form_width = $('content').find('.login-form').width();
+	
+	var S_index = 0;
+
+	$('.content').find('.login-form').css('top' , ((windowH - login_form_height)/2) + 'px');
+
+	//remeber box (觸發  )
+	$('.remeber-box').toggle(function(){
+
+			$('.remeber-box').css('background-color' , '#FF0000');
+
+	}, function() {
+
+			$('.remeber-box').css('background-color' , 'rgba(0,0,0,0)');
+
+	});
+
+	//login-form rotate
+	$('.switch-btn').click(function(){
+
+		if(S_index == 0){
+			$('.login-form').css('transform' , 'rotateY(360deg)');
+			$('.student-form').css('display' , 'none');
+			$('.admin-form').css('display' , 'block');
+			S_index = 1;
+		}
+		else{
+			$('.login-form').css('transform' , 'rotateY(0deg)');
+			$('.student-form').css('display' , 'block');
+			$('.admin-form').css('display' , 'none');
+			S_index = 0;
+		}
+
+	});
+
+
+	//login
+	$('.login-form').find('.Slogin-btn').click(function(){
+		// alert($('.login-form').find('.student-id').val() + "   " +$('.login-form').find('.student-password').val());
+		$.ajax({
+			url: 'login.php' , 
+			type: 'POST' , 
+			dataType: 'html' , 
+			data:{
+				S_id:$('.login-form').find('.student-id').val() , 
+				S_password:$('.login-form').find('.student-id').val() 
+			} , 
+			error:function(error){
+				alert(error);
+			} , 
+			success:function(response){
+				if(response.match("Login Success")){
+					window.location.href = "Smain.php";
+				}
+				else if(response.match("no id")){
+					alert("ID or Password error");
+					$('.login-form').find('.student-id').val('');
+					$('.login-form').find('.student-password').val('');
+				}
+				else if(response.match("no password")){
+					alert("ID or Password error");
+					$('.login-form').find('.student-id').val('');
+					$('.login-form').find('.student-password').val('');
+				}
+				console.log(response);
+			}
+		});
+	});
+
+
+
+	
+});
+</script>

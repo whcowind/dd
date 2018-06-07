@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- google font -->
+	<!-- google font -->
+	<link href="CSS/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet/less" type="text/css" href="CSS/SLogin.less"/>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="JS/framework/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="JS/framework/less.js"></script> 
+	<title>學生登入</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<h1>學生登入</h1>
+			
+			<form class="form">
+				<input type="text" class = 'SID' placeholder="Username">
+				<input type="password" class = 'SPass' placeholder="Password">
+				<button type="submit" id="login-button">登入</button>
+			</form>
+		</div>
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+
+</body>
+
+<script type="text/javascript" src="JS/framework/jquery.js"></script>
+<script type="text/javascript" src="JS/framework/ajaxfileupload.js"></script>
+<script type="text/javascript" src="JS/framework/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="JS/framework/angular.js"></script>
+<script type="text/javascript" src="JS/definition/title.js"></script>
+<script type="text/javascript" src="JS/definition/changePage.js"></script>
+<script type="text/javascript" src="JS/definition/changeAnimation.js"></script>
+<script type="text/javascript" src="JS/definition/button.js"></script>
+<script type="text/javascript" src="JS/definition/cssInitialization.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	 $("#login-button").click(function(event){
+		 event.preventDefault();
+	 
+		 $('form').fadeOut(500);
+		 $('.wrapper').addClass('form-success');
+
+		 $.ajax({
+			url: 'Slogin.php' , 
+			type: 'POST' , 
+			dataType: 'html' , 
+			data:{
+				S_id:$('.container').find('.SID').val() , 
+				S_password:$('.container').find('.SPass').val() 
+			} , 
+			error:function(error){
+				// alert(error);
+			} , 
+			success:function(response){
+				// Sremember();
+				
+				if(response.match("Login Success")){
+					window.location.href = "SInterface/Smain.php";
+				}
+				else if(response.match("no id")){
+					alert("帳號密碼錯誤");
+					$('form').fadeIn(500);
+		 			$('.wrapper').removeClass('form-success');
+					// $('.login-form').find('.student-id').val('');
+					// $('.login-form').find('.student-password').val('');
+				}
+				else if(response.match("no password")){
+					alert("帳號密碼錯誤");
+					$('form').fadeIn(500);
+		 			$('.wrapper').removeClass('form-success');
+					// $('.login-form').find('.student-id').val('');
+					// $('.login-form').find('.student-password').val('');
+				}
+				// console.log(response);
+			}
+		});
+
+	});
+
+	
+});
+	
+</script>
