@@ -9,7 +9,7 @@
 
 <?php
 	
-	//receive 
+	//receisave 
 	$A_id = $_POST['A_id'];
 	$A_password = $_POST['A_password'];
 
